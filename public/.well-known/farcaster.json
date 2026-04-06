@@ -1,4 +1,9 @@
 {
+  "accountAssociation": {
+    "header": "eyJmaWQiOjEzNDE4ODAsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg1OUFBQjE5OTFjZTA0OGVEZDM1OWIxQmU1QmU2MUU0MTYxZTVmNkUxIn0",
+    "payload": "eyJkb21haW4iOiJoYW5nbWFuLXdlbGQtY2hpLnZlcmNlbC5hcHAifQ",
+    "signature": "SGaoAZnYTJOyUcjEXLWdawjI+ICNqr9axnGqXU3ahD4IQ5g7HF806Z2s0gAye5nndfLUaOH33iOSNefECgcGdBw="
+  },
   "miniapp": {
     "version": "1",
     "name": "Hangman",
