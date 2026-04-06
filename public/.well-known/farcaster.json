@@ -1,0 +1,13 @@
+{
+  "miniapp": {
+    "version": "1",
+    "name": "Hangman",
+    "iconUrl": "https://hangman-weld-chi.vercel.app/icon.svg",
+    "homeUrl": "https://hangman-weld-chi.vercel.app/",
+    "imageUrl": "https://hangman-weld-chi.vercel.app/og.svg",
+    "buttonTitle": "Play Hangman",
+    "splashImageUrl": "https://hangman-weld-chi.vercel.app/icon.svg",
+    "splashBackgroundColor": "#0f172a",
+    "requiredChains": ["eip155:8453"]
+  }
+}

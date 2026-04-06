@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1533" />
+      <stop offset="100%" stop-color="#1b1246" />
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <text x="100" y="220" fill="#e2e8f0" font-family="monospace" font-size="88" font-weight="700">HANGMAN</text>
+  <text x="100" y="290" fill="#93c5fd" font-family="sans-serif" font-size="36">Base-themed crypto word challenge</text>
+  <text x="100" y="370" fill="url(#acc)" font-family="monospace" font-size="42">A-Z + 0-9</text>
+</svg>
