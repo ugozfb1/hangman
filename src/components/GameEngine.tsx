@@ -10,6 +10,8 @@ import { StartScreen } from "@/components/screens/StartScreen";
 import { WinScreen } from "@/components/screens/WinScreen";
 import type { Difficulty, GameAction, GameState } from "@/types";
 import { checkWin, getRandomWord, normalizeChar } from "@/utils/gameUtils";
+import sdk from "@farcaster/frame-sdk";
+
 
 const MAX_LIVES = 6;
 
@@ -105,6 +107,10 @@ export function GameEngine() {
     dispatch({ type: "RESTART_GAME" });
   }, []);
 
+  useEffect(() => {
+    sdk.actions.ready();
+  }, []);
+  
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       guessChar(event.key);
