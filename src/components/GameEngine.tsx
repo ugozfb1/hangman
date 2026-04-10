@@ -12,7 +12,6 @@ import type { Difficulty, GameAction, GameState } from "@/types";
 import { checkWin, getRandomWord, normalizeChar } from "@/utils/gameUtils";
 import sdk from "@farcaster/frame-sdk";
 
-
 const MAX_LIVES = 6;
 
 const initialState: GameState = {
@@ -77,6 +76,10 @@ export function GameEngine() {
   const [state, dispatch] = useReducer(gameReducer, initialState);
   const [selectedDifficulty, setSelectedDifficulty] = useState<Difficulty | null>(null);
 
+  useEffect(() => {
+    sdk.actions.ready();
+  }, []);
+
   const startGame = useCallback(() => {
     if (!selectedDifficulty) return;
     const entry = getRandomWord(selectedDifficulty);
@@ -107,10 +110,6 @@ export function GameEngine() {
     dispatch({ type: "RESTART_GAME" });
   }, []);
 
-  useEffect(() => {
-    sdk.actions.ready();
-  }, []);
-  
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       guessChar(event.key);

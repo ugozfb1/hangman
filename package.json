@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@coinbase/onchainkit": "^1.1.2",
     "@farcaster/frame-sdk": "^0.2.0",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "viem": "^2.47.12",
+    "wagmi": "^2.19.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.2",
